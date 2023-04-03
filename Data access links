@@ -7,3 +7,12 @@ link = https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_J
 Integrate a healthy retinal dataset with a dataset from a retinopathy (OIR) sample (assignment)
 link = https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_retinopathy_Joyal.txt 
 
+#Publication for discussion
+
+Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets
+Macosko et al, Cell 2015
+
+http://dx.doi.org/10.1016/j.cell.2015.05.002
+
+Full publication
+https://www.cell.com/cell/fulltext/S0092-8674(15)00549-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415005498%3Fshowall%3Dtrue
