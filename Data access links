@@ -1,11 +1,11 @@
 Analyze a single-cell RNAseq dataset from mouse retina (McCarroll lab) 
-link = https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Mccarroll.txt
+link = curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Mccarroll.txt --output Dropseq_p14_retina_Mccarroll.txt
 
 Integrate 2 healthy retinal datasets from 2 different labs (McCarroll lab + Joyal lab) 
-link = https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Joyal.txt
+link = curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Joyal.txt --output Dropseq_p14_retina_Joyal.txt
 
 Integrate a healthy retinal dataset with a dataset from a retinopathy (OIR) sample (assignment)
-link = https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_retinopathy_Joyal.txt 
+link = curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_retinopathy_Joyal.txt --output Dropseq_p14_retina_retinopathy_Joyal.txt
 
 #Publication for discussion
 
