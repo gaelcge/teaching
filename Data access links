@@ -1,18 +1,87 @@
-Analyze a single-cell RNAseq dataset from mouse retina (McCarroll lab) 
-link = curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Mccarroll.txt --output Dropseq_p14_retina_Mccarroll.txt
+                      ### Hands on and assignment for the Single-cell Academy class ####
+                      
+  ### You need to have R (version > or = 4) and R Studio installed on your computer (see here for install https://rstudio-education.github.io/hopr/starting.html)
 
-Integrate 2 healthy retinal datasets from 2 different labs (McCarroll lab + Joyal lab) 
-link = curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Joyal.txt --output Dropseq_p14_retina_Joyal.txt
+                                    ############
 
-Integrate a healthy retinal dataset with a dataset from a retinopathy (OIR) sample (assignment)
-link = curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_retinopathy_Joyal.txt --output Dropseq_p14_retina_retinopathy_Joyal.txt
 
-#Publication for discussion
+  #### 1/ Analyze a single-cell RNAseq dataset from mouse retina (McCarroll lab) (in class)
+        
+        ### Download dataset from the command line (command prompt/terminal) using the following command
 
-Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets
-Macosko et al, Cell 2015
+curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Mccarroll.txt --output Dropseq_p14_retina_Mccarroll.txt
 
-http://dx.doi.org/10.1016/j.cell.2015.05.002
+#Follow this tutorial in R Studio = https://padilr1.github.io/HGEN_663/lec8r_pt1.html
 
-Full publication
-https://www.cell.com/cell/fulltext/S0092-8674(15)00549-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415005498%3Fshowall%3Dtrue
+#SAVE the different GRAPH for REVIEW (save in png or screenshot)
+
+#Save the seurat object created in R using the following command
+
+saveRDS(Seurat_object, "Seurat_object_MacCarroll.rds")
+  
+                                    ############
+
+
+  ##### 2/ Integrate 2 healthy retinal datasets from 2 different labs (McCarroll lab + Joyal lab) (3%)
+        
+        ### Download dataset from the command line (command prompt/terminal) using the following command
+
+curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_Joyal.txt --output Dropseq_p14_retina_Joyal.txt
+
+#Follow this tutorial in R Studio = https://padilr1.github.io/HGEN_663/lec8r_pt1.html using the Joyal Dataset (Dropseq_p14_retina_Joyal.txt)
+
+#SAVE the different GRAPH for REVIEW (save in png or screenshot) !!!!!!!!!
+
+#Save the seurat object created in R using the following command
+
+saveRDS(Seurat_object, "Seurat_object_Joyal.rds")
+
+#Follow this tutorial in R to integrate the 2 seurat objects (McCarroll + Joyal) = https://padilr1.github.io/HGEN_663/lec8r_pt2.html
+
+#Save the integrated seurat object created in R using the following command
+
+saveRDS(Seurat_object, "Seurat_object_MacCarroll_Joyal.rds")
+
+                       ####Grading depends on the GRAPH generated/saved
+                            
+                                     ############
+                            
+
+    ##### 3/ Integrate a healthy retinal dataset with a dataset from a retinopathy (OIR) sample (3%)
+    
+        ### Download dataset from the command line (command prompt/terminal) using the following command
+
+curl -k https://datahub-440-cq3.p.genap.ca/HGEN_663_scRNAseq/Dropseq_p14_retina_retinopathy_Joyal.txt --output Dropseq_p14_retina_retinopathy_Joyal.txt
+
+##Following the same logic as for the integration of the 2 datasets (McCarroll + Joyal), in R Studio
+ 
+##create a seurat object for the Dropseq_p14_retina_retinopathy_Joyal dataset and integrate it to the Seurat_object_MacCarroll_Joyal.
+
+#SAVE the different GRAPH for REVIEW (save in png or screenshot) !!!!!!!!!
+
+#Save the integrated seurat object created in R using the following command
+
+saveRDS(Seurat_object, "Seurat_object_MacCarroll_Joyal_OIR.rds")
+
+                      ####Grading depends on the GRAPH generated/saved
+                            
+                                     ############
+                            
+
+    ##### 4/ Publication for discussion (4%)
+
+#Read and FULLY understand the following publication (text, figures and supplemental figures)
+#Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets, Macosko et al, Cell 2015 =
+#http://dx.doi.org/10.1016/j.cell.2015.05.002
+#Full publication =
+#https://www.cell.com/cell/fulltext/S0092-8674(15)00549-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867415005498%3Fshowall%3Dtrue
+
+#As a team, present all the figures and supplemental figures. Each participant has to present an equal/fair portion of the publication.
+#Prepare a combined ppt, and define the order for the presentation of each participant.
+#There are a lot of graph that you will have to explain (what are the x and y axis, what do they represent technically and biologically)
+# Albeit each participant will present a portion of the publication, they must know ALL the figures/suppl figures.
+#Grading depends on individual performance and team managment.
+
+
+
+
